@@ -1,0 +1,23 @@
+.input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 700px;
+  height: 250px;
+  border: 1px solid gray;
+  margin: 0 auto;
+}
+.upload-box {
+  position: relative;
+  margin: 20px auto 0;
+  width: 700px;
+  height: 250px;
+  border: 1px solid gray;
+  line-height: 250px;
+  text-align: center;
+}
+.img {
+  margin: 0 auto;
+  width: 600px;
+}

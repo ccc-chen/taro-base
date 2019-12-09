@@ -1,0 +1,119 @@
+@import "../../styles/mixin";
+@import "../../assets/common/css/lib/animate.min.scss";
+
+.mask {
+  z-index: 15;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.mask-bottom-box {
+  z-index: 16;
+  bottom: 0;
+  position: fixed;
+  width: 750px;
+  // height: 653px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 26px 26px 0px 0px;
+  animation-duration: 0.5s;
+  .mask-header-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    width: 750px;
+    height: 100px;
+    border-bottom: 1px solid rgba(238, 238, 238, 1);
+    .header-cancel {
+      font-size: 28px;
+      font-weight: 500;
+      color: rgba(31, 31, 31, 1);
+    }
+    .header-select-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  }
+  .scrollView {
+    height: 480px;
+  }
+  .btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 750px;
+    height: 110px;
+    border-radius: 10px;
+    border-top: 2px solid rgba(238, 238, 238, 1);
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 1);
+    .add-button {
+      margin-left: 10px;
+    }
+    .add-icon {
+      width: 26px;
+      height: 26px;
+    }
+  }
+  .header-item-box {
+    display: flex;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 690px;
+    padding: 30px 0 31px 0;
+    border-bottom: 1px solid rgba(238, 238, 238, 1);
+    .header-icon-box {
+      .header-bank-icon {
+        margin-top: 4px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .header-right-box {
+      width: 100%;
+      .right-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 20px;
+        .title {
+          font-size: 30px;
+          font-weight: 500;
+          color: rgba(0, 0, 0, 1);
+        }
+        .name {
+          font-size: 24px;
+          font-weight: 500;
+          color: rgba(0, 0, 0, 1);
+        }
+      }
+      .card-num {
+        margin-left: 20px;
+        font-size: 24px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 1);
+      }
+    }
+  }
+}
+
+.mask-center {
+  position: fixed;
+  width: 300px;
+  height: 250px;
+  background: gray;
+  top: 50%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -125px;
+}
